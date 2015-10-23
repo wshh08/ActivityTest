@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/id_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        app:title="Fuckkkk..."/>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:columnCount="4"
+        android:useDefaultMargins="true">
+
+        <TextView
+            android:layout_columnSpan="1"
+            android:layout_gravity="right"
+            android:text="First Name:"/>
+        <EditText
+            android:layout_columnSpan="2"
+            android:ems="11"/>
+
+        <TextView
+            android:layout_column="0"
+            android:layout_gravity="right"
+            android:text="Last Name:"/>
+        <EditText
+            android:layout_columnSpan="2"
+            android:ems="11"/>
+
+        <RadioGroup android:layout_columnSpan="4"
+            android:layout_gravity="left">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="Business"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Social"/>
+        </RadioGroup>
+
+        <Button
+            android:layout_column="1"
+            android:text="OK"/>
+        <Button
+            android:layout_column="2"
+            android:text="Cancel"/>
+    </GridLayout>
+
+    <Button
+        android:id="@+id/button_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button 1"
+        />
+
+</LinearLayout>
